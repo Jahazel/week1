@@ -1,4 +1,5 @@
 import Head from "next/head";
+import ReactTypingEffect from "react-typing-effect";
 
 export default function Index() {
     return (
@@ -21,8 +22,13 @@ export default function Index() {
                         alt="profile-picture"
                     />
                     <h1>
-                        Hello, nice to meet you!
-                        <br /> Im Jahazel.
+                        Hi, nice to meet you!
+                        <br /> I'm{" "}
+                        <ReactTypingEffect
+                            speed={100}
+                            eraseSpeed={50}
+                            text={["Jahazel."]}
+                        />
                     </h1>
                 </div>
                 <div id="info-section">
